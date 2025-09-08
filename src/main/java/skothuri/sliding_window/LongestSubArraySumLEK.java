@@ -3,11 +3,12 @@ package skothuri.sliding_window;
 import java.util.*;
 
 /**
- * Problem: Given an array of integers and a target k, find the length of the longest subarray whose sum is less than or equal to k.
+ * Problem: Given an array of integers and a target k,
+ * find the length of the longest subarray whose sum is less than or equal to k.
  */
 
-class LongestSubarraySumLEK {
-	public int longestSubarray(int[] nums, int k) {
+public class LongestSubArraySumLEK {
+	public int longestSubArray(int[] nums, int k) {
 		int n = nums.length;
 		long prefixSum = 0;
 		int maxLen = 0;

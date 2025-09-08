@@ -11,7 +11,7 @@ class SlidingWindowMaximum {
         
         int n = nums.length;
         int[] result = new int[n - k + 1];
-        Deque<Integer> dq = new ArrayDeque<>(); // stores indices
+        LinkedList<Integer> dq = new LinkedList<>(); // stores indices
 
         for (int i = 0; i < n; i++) {
             // Remove out-of-window elements
